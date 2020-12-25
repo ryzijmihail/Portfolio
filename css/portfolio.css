@@ -1,6 +1,7 @@
 body{
     font-family: 'Inter', sans-serif;
     margin: 0;
+    font-size: 14px;
 }
 .dark{
     background-color: #232326;
@@ -10,6 +11,12 @@ body{
     color: #F3F2F0;
     
 }
+.dark .circle circle{
+    fill: #D40000;
+}
+.dark .triangle path{
+    fill: #FFFFFF;
+}
 .light{
     background-color: #F3F2F0;
     color:#010101;
@@ -17,6 +24,12 @@ body{
 .light .nav-link{
     color:#010101;
     
+}
+.light .circle circle{
+    fill: #FFFFFF;
+}
+.light .triangle path{
+    fill: #D40000;
 }
 .wrapper{
     max-width: 1140px;
@@ -33,6 +46,10 @@ body{
     font-size: 74px;
     text-transform: uppercase;
 
+}
+.title-h3{
+    font-size: 16px;
+    font-weight: 700;
 }
 .photo{
     margin-bottom: 120px;
@@ -70,3 +87,65 @@ header{
 .nav-link:hover{
     color:#D40000;
 }
+.nav-info .nav-item{
+    position: relative;
+}
+.nav-info .nav-item::before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 24px;
+    background-color:rgba(243,242,240,0.5);
+    position: absolute;
+    left: 0;
+    top: calc(50%-12px);
+}
+.nav-info .nav-item:first-child::before{
+    display: none;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    margin-top: 100px;
+
+}
+.project{
+    margin:0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+.project-img{
+    width: 16px;
+    height: 12px;
+    display: block;
+    background-image: url(../img/icons/Arrow.svg);
+    margin-left: 15px;
+}
+    .skill{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .skill-item{
+        flex:0 0 24%;
+    }
+    .skill .title-h3{
+        text-transform: uppercase;
+    }
+    .skill .descripti{
+        line-height: 150%;
+    }
+    .circle-main{
+        width: 253px;
+        height: 253px;
+
+    }
+    .circle-nav{
+        width: 106px;
+        height: 106px;
+
+    }
